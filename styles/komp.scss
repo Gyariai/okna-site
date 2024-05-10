@@ -1,0 +1,39 @@
+.cont-b {
+    width: 315px!important;
+}
+
+.img-b {
+    width: 295px!important;
+    height: 295px!important;
+}
+
+.komp-title {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h2 {
+        text-transform: uppercase;
+        width: 100%;
+        max-width: 1240px;
+        font-size: 2rem;
+        color: #464545;
+        font-weight: bold;
+        text-transform: uppercase;
+        justify-content: flex-start;
+    }
+    p {
+        width: 100%;
+        max-width: 1240px;
+        padding: 16px 10px; 
+    }
+
+    
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 1.5rem;
+        }    
+    }
+}

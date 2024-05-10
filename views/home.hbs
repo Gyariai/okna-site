@@ -1,0 +1,119 @@
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(96738660, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/96738660" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<div class="slider">
+    <p class="sl-text">
+    <img src="/img/1.png"/> Установкa, ремонт и утепление окон
+    </p>
+
+    <img class="back-img"  src="/img/home.jpg" alt="#"/>
+</div>
+
+<div class="price">
+    <div class="pr-title">
+        <h2>Стоимость остекления балконов и лоджий в Перми</h2>
+    </div>
+    <div class="price-cont">
+        {{#each price}}
+        <div class="price-block">
+            <p>
+                {{ this.title }}
+            </p>
+            <img src="{{ this.img }}"  alt="#"/>
+            <ul>
+                {{#each this.price}}
+                <li class="price-menu">
+                    <div>
+                        <p class="title">
+                            {{ this.title1 }}
+                        </p>
+                      
+                    </div>
+                    <div class="price">
+                        <span> 
+                        {{#if this.to}}
+                            от
+                             {{/if}}
+                        <big>{{ this.price }}</big> ₽</span>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+<div class="sl-home-cont">
+    <img src="/img/home-sl1.jpg"  alt="#">
+    <div>
+        <p class="title1">
+            Ремонт пластиковых окон
+        </p>
+        <p>
+Визит мастера для консультации бесплатен и ни к чему вас не обязывает. Стоимость ремонтных работ зависит от их сложности и необходимости замены каких-либо комплектующих.
+<br />
+(записаться можно по телефону  <a data-id="phone_call" href="callto:+79931960575" >+7 (993) 196-05-75</a> <a data-id="phone_call_w" style="color: #ffb300" >+7 (993) 196-05-75</a>)
+
+        </p>
+    </div>
+</div>
+
+<div class="home-price-work">
+    <div class="conteiner-work">
+        {{#each price2}}
+        <div class="conteiner-content ">
+            <p class="title">{{ this.title1 }}</p>
+
+            <span class="price">
+                {{ this.to }}  
+                {{ this.title2 }} 
+                <span class="rub">₽</span>
+                {{#if this.m2}}
+                /м2<sup>2</sup>
+                {{/if}}
+                </span>
+            
+            <img src="{{ this.img }}"  alt="#">
+            <p class="text">{{ this.text }}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+<div class="conteiner-contact">
+    <div class="img-form"></div>
+    <div class="form-cont">
+    <p>Вызовите нашего замерщика на удобное для Вас время. Он рассчитает точную стоимость ваших работ. Отправьте заявку прямо сейчас!</p>
+    <div class="form">
+        <div class="mb-3">
+            <label for="phone" class="form-label">Оставьте телефон и мы перезвоним</label>
+            <input type="email" class="form-control" id="phone" placeholder="_ (___) ___-__-__">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="form-label">Оставте сообщение</label>
+            <textarea class="form-control" id="text" rows="3"></textarea>
+        </div>
+        <div class="submit">
+            <button id="submit" type="button" class="btn btn-warning">Отправить заявку</button>
+        </div>
+    </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,4 @@
+User-agent: *
+Crawl-delay: 1
+Host: https://remontokonperm.ru/
+Sitemap: https://remontokonperm.ru/sitemap.xml

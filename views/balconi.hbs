@@ -1,0 +1,77 @@
+<div class="komp-title">
+    <h2>ОТДЕЛКА БАЛКОНОВ И ЛОДЖИЙ</h2>
+    <p>
+        Остекление балкона алюминиевыми или пластиковыми окнами обеспечит надежную защиту помещения от внешних воздействий: осадков, пыли, грязи и ветра, кроме того существенно повысится шумоизоляция квартиры.
+    </p>
+</div>
+
+<div class="bal-cont-price">
+    <div class="bal-cont">
+        {{#each price}}
+        <div class="cont-price">
+            <span class="title">{{ this.title }}</span>
+            <img src="{{ this.img }}" alt="">
+            <ul>
+                {{#each this.pricelist}}
+				<li>{{ this.text }}<span>{{ this.price }}</span></li>
+                {{/each}}
+			</ul>
+
+            <p>Цена от: {{ this.fullprice }} <span class="rub">₽</span></p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+
+<div class="sl-home-cont">
+    <img src="/img/bal-sl-1.jpg" alt="">
+    <div>
+      <p class="title1">
+            Ремонт пластиковых окон
+        </p>
+        <p>
+Визит мастера для консультации бесплатен и ни к чему вас не обязывает. Стоимость ремонтных работ зависит от их сложности и необходимости замены каких-либо комплектующих.
+<br />
+(записаться можно по телефону  <a data-id="phone_call" href="callto:+79931960175" >+7 (993) 196-01-75</a> <a data-id="phone_call_w" style="color: #ffb300" >+7 (993) 196-05-75</a>)
+
+        </p>
+    </div>
+</div>
+
+
+<div class="home-price-work">
+   <h2>ДРУГИЕ ВИДЫ РАБОТ</h2>
+    <div class="conteiner-work">
+        {{#each price2}}
+        <div class="conteiner-content">
+            <p class="title">{{ this.title1 }}</p>
+            <img src="{{ this.img }}" alt="">
+            <p class="text">{{ this.text }}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+<div class="conteiner-contact">
+    <div class="img-form"></div>
+    <div class="form-cont">
+    <p>Вызовите нашего замерщика на удобное для Вас время. Он рассчитает точную стоимость ваших работ. Отправьте заявку прямо сейчас!</p>
+    <div class="form">
+        <div class="mb-3">
+            <label for="phone" class="form-label">Оставьте телефон и мы перезвоним</label>
+            <input type="email" class="form-control" id="phone" placeholder="_ (___) ___-__-__">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="form-label">Оставте сообщение</label>
+            <textarea class="form-control" id="text" rows="3"></textarea>
+        </div>
+        <div class="submit">
+            <button id="submit" type="button" class="btn btn-warning">Отправить заявку</button>
+        </div>
+    </div>
+    </div>
+
+</div>

@@ -1,0 +1,64 @@
+<div class="remont-title">
+    <table class="table-zebra-striping">
+        <tbody>
+            <tbody>
+            <tr><th>Стооимость всех видов работ по ремонту окон</th><th></th></tr>
+            {{#each price}}
+                {{#if this.price}}
+                    <tr><td>{{this.text}}</td><td>{{this.price}}</td></tr>
+                    {{else}}
+                    <tr><td colspan="2"></td></tr>
+                    <tr><td colspan="2"><span class="bold">{{this.text}}</span></td></tr>
+                {{/if}}
+
+            {{/each}}
+            </tbody>
+        </tbody>
+    </table>
+</div>
+
+
+<div class="home-price-work">
+    <div class="conteiner-work">
+        {{#each price2}}
+        <div class="conteiner-content ">
+            <p class="title">{{ this.title1 }}</p>
+
+            <span class="price">
+                {{ this.to }}  
+                {{ this.title2 }} 
+                <span class="rub">₽</span>
+                {{#if this.m2}}
+                /м2<sup>2</sup>
+                {{/if}}
+                </span>
+            
+            <img src="{{ this.img }}"  alt="#">
+            <p class="text">{{ this.text }}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+
+<div class="conteiner-contact">
+    <div class="img-form"></div>
+    <div class="form-cont">
+    <p>Вызовите нашего замерщика на удобное для Вас время. Он рассчитает точную стоимость ваших работ. Отправьте заявку прямо сейчас!</p>
+    <div class="form">
+        <div class="mb-3">
+            <label for="phone" class="form-label">Оставьте телефон и мы перезвоним</label>
+            <input type="email" class="form-control" id="phone" placeholder="_ (___) ___-__-__">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="form-label">Оставте сообщение</label>
+            <textarea class="form-control" id="text" rows="3"></textarea>
+        </div>
+        <div class="submit">
+            <button id="submit" type="button" class="btn btn-warning">Отправить заявку</button>
+        </div>
+    </div>
+    </div>
+
+</div>

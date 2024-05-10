@@ -1,0 +1,41 @@
+@import "./header.scss";
+@import "./footer.scss";
+@import "./home.scss";
+@import "./komp.scss";
+@import "./okna.scss";
+@import "./remont.scss";
+@import "./bal.scss";
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+p {
+    margin-bottom: 0!important;
+}
+
+.body {
+    min-height: 80vh;
+
+}
+
+.position-cont {
+    max-width: 1440px;
+}
+
+h2 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.dis_none {
+    display: none;
+}

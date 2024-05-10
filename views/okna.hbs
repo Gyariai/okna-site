@@ -1,0 +1,113 @@
+<div class="komp-title">
+    <h2>ЦЕНЫ НА ПЛАСТИКОВЫЕ ОКНА</h2>
+    <p>Надежные пластиковые окна, разработанные для российского потребителя с учетом особенностей нашего климата. Стоимость окон зависит от типа профиля, стеклопакета, фурнитуры, способа открывания створок, а также размера и геометрии.</p>
+</div>
+
+
+<div class="okna-sl-cont">
+
+    <div class="okna">
+        <div class="okna-conteiner">
+            <img src="/img/okna-1.jpg"/>
+
+            <div class="text-cont">
+                <span class="bold">Одностворчатое окно</span>
+                <span class="small">Профиль: Exprof - Artek - KBE</span>
+                <span class="price-2">От 9 990 <span class="rub">₽</span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="okna">
+        <div class="okna-conteiner">
+            <img src="/img/okna-2.jpg"/>
+            
+            <div class="text-cont">
+                <span class="bold">Двухстворчатое окно</span>
+                <span class="small">Профиль: Exprof - Artek - KBE</span>
+             <span class="price-2">От 14 990 <span class="rub">₽</span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="okna">
+        <div class="okna-conteiner">
+            <img src="/img/okna-3.jpg"/>
+
+            <div class="text-cont">
+                <span class="bold">Трехстворчатое окно</span>
+                <span class="small">Профиль: Exprof - Artek - KBE</span>
+               <span class="price-2">От 19 990 <span class="rub">₽</span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="okna">
+        <div class="okna-conteiner">
+            <img src="/img/okna-4.jpg"/>
+
+            <div class="text-cont">
+                <span class="bold">Балконный блок</span>
+                <span class="small">Профиль: Exprof - Artek - KBE</span>
+              <span class="price-2">От 20 990 <span class="rub">₽</span></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="sl-home-cont">
+    <img src="/img/okna-sl-2.jpg" alt="">
+    <div>
+        <p class="title1">
+            КАЧЕСТВЕННЫЙ МОНТАЖ ОКОН
+        </p>
+        <p>
+            Монтаж окон в нашей компании выполняется опытными мастерами в точном соответствии с техническими стандартами.
+        </p>
+    </div>
+</div>
+
+<div class="home-price-work padding-okna">
+    <div class="conteiner-work">
+        {{#each price}}
+        <div class="conteiner-content cont-b">
+            <p class="title">{{ this.title1 }}</p>
+
+            <span class="price">
+                {{ this.to }}  
+                {{ this.title2 }} 
+                <span class="rub">₽</span>
+                {{#if this.m2}}
+                /м2<sup>2</sup>
+                {{/if}}
+                </span>
+            
+            <img class="img-b" src="{{ this.img }}" alt="">
+            <p class="text">{{ this.text }}</p>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+
+
+<div class="conteiner-contact">
+    <div class="img-form"></div>
+    <div class="form-cont">
+    <p>Вызовите нашего замерщика на удобное для Вас время. Он рассчитает точную стоимость ваших работ. Отправьте заявку прямо сейчас!</p>
+    <div class="form">
+        <div class="mb-3">
+            <label for="phone" class="form-label">Оставьте телефон и мы перезвоним</label>
+            <input type="email" class="form-control" id="phone" placeholder="_ (___) ___-__-__">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="form-label">Оставте сообщение</label>
+            <textarea class="form-control" id="text" rows="3"></textarea>
+        </div>
+        <div class="submit">
+            <button id="submit" type="button" class="btn btn-warning">Отправить заявку</button>
+        </div>
+    </div>
+    </div>
+
+</div>

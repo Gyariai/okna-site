@@ -1,0 +1,83 @@
+.remont-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.remont-sl {
+    max-height: 650px;
+}
+
+table {
+    border-collapse: collapse;
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    border-color: gray;
+    white-space: normal;
+    font-variant: normal;
+}
+
+.table-zebra-striping {
+    border: 10px solid #e5e5e5;
+    width: 100%;
+    max-width: 980px;
+}
+
+.table-zebra-striping tr:nth-child(2n+1) {
+    background: #f5f5f5;
+}
+
+.table-zebra-striping th {
+    font-weight: normal;
+    background: #f08c28;
+    color: white;
+    
+    
+}
+
+
+table th {
+    font-size: 1.5em;
+}
+
+table td, table th {
+    padding: 10px 15px 11px;
+    /* border-right: 1px dotted #ccc; */
+    
+}
+
+table td:nth-child(2n) {
+    text-align: end;
+    
+}
+
+table th:nth-child(2n) {
+    text-align: end;
+    
+}
+
+@media screen and (max-width: 768px) {
+    table td, table th {
+        max-width: 50px
+    }
+    .table-zebra-striping th {
+        font-weight: normal;
+        background: #f08c28;
+        color: white;
+        font-size: 14px;
+        
+    }
+}
+
+.bold {
+    font-weight: bold;
+}
